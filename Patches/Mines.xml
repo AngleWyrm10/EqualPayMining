@@ -1,0 +1,103 @@
+<Patch>
+	<!-- Design parameters
+		 * Pawn labor is worth 7.523 silver/hour
+			Silver = 650/216000 = 0.003009259 silver/tick
+			Ticks  = 216000/650 = 332.307692308 ticks/silver
+	        1hr    = 2500 ticks
+	-->
+
+   <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mines</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- Steel -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_Steel"]/workAmount</xpath>
+                    <value>
+                   		<!-- 
+                            Steel is worth 1.37 silver/unit
+                            1.37 x 332 ticks/silver = 455 ticks
+                        -->
+                        <workAmount>455</workAmount>
+                    </value>
+                </li>
+
+                <!-- Plasteel -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_Plasteel"]/workAmount</xpath>
+                    <value>
+                        <!-- 
+		                	plasteel is worth 19 silver/unit
+		                	19 x 332 ticks/silver = 6314 ticks
+		                -->
+                        <workAmount>6314</workAmount>
+                    </value>
+                </li>
+
+                <!-- Uranium -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_Uranium"]/workAmount</xpath>
+                    <value>
+                   		<!-- 
+                            Uranium is worth 3.40 silver/unit
+                            3.40 x 332 ticks/silver = 1130 ticks
+		                -->
+                        <workAmount>1130</workAmount>
+                    </value>
+                </li>
+
+                <!-- Silver -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_Silver"]/workAmount</xpath>
+                    <value>
+                        <!-- 
+                            Silver is worth 1 silver/unit
+                            1 x 332 ticks/silver = 332 ticks
+                        -->
+                        <workAmount>332</workAmount>
+                    </value>
+                </li>
+
+                <!-- Gold -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_Gold"]/workAmount</xpath>
+                    <value>
+                        <!-- 
+                            Gold is worth 14.05 silver/unit
+                            14.05 x 332 ticks/slver = 4669 ticks
+                        -->
+                       <workAmount>4669</workAmount>
+                    </value>
+                </li>
+
+                <!-- Jade -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_Jade"]/workAmount</xpath>
+                    <value>
+                        <!-- 
+                            Jade is worth 3.35 silver/unit
+                            3.35 x 332 ticks/silver = 1113 ticks
+                        -->
+                        <workAmount>1113</workAmount>
+                    </value>
+                </li>
+
+                <!-- Component-->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="Excavate_ComponentIndustrial"]/workAmount</xpath>
+                    <value>
+                        <!-- 
+                            Component is worth 19 silver/unit
+                            19 x 332 ticks/silver = 6314 ticks
+                        -->
+                        <workAmount>6314</workAmount>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

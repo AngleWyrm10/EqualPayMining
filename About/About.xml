@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Equal Pay Mining</name>
+	<author>AngleWyrm</author>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>AngleWyrm.EqualPayMining</packageId>
+	<description>Equal Pay Mining</description>
+	<modDependencies>
+		<li>
+			<displayName>Mines</displayName>			
+			<packageId>WexMan.Mines</packageId>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/1545681321</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>WexMan.Mines</li>
+		<li>Argon.VMEu</li>
+	</loadAfter>
+</ModMetaData>
