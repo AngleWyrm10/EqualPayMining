@@ -4,7 +4,6 @@
   <dependencies>
     <li>WexMan.Mines</li>
   </dependencies>
-  <incompatibleWith />
   <loadAfter>
     <li>WexMan.Mines</li>
     <li>Argon.VMEu</li>
