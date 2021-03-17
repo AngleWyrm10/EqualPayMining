@@ -8,7 +8,7 @@
     <li>WexMan.Mines</li>
     <li>Argon.VMEu</li>
   </loadAfter>
-  <manifestUri>https://github.com/AngleWyrm10/EqualPayMining/blob/master/About/Manifest.xml</manifestUri>
+  <manifestUri>https://raw.githubusercontent.com/AngleWyrm10/EqualPayMining/master/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/AngleWyrm10/EqualPayMining/releases/latest</downloadUri>
 
 </Manifest>
