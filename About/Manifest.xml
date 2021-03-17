@@ -1,6 +1,6 @@
 <Manifest>
   <identifier>AngleWyrm.EqualPayMining</identifier>
-  <version>2021.3.16</version>
+  <version>2021.3.17</version>
   <dependencies>
     <li>WexMan.Mines</li>
   </dependencies>
